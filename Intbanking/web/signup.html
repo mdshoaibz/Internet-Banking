@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+Sign Up Page
+-->
+<html>
+    <head>
+        <title>Online Banking</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="/icon.png" >
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="signup.css">
+    </head>
+      <body>
+        <header class="header-section">
+          <img src="logo.png" class="header-logo" />
+          <nav class="nav-section">
+            <a href="#" class="nav-link"> About </a>
+            <a href="#" class="nav-link"> How to work it out </a>
+            <a href="#" class="nav-link"> Interest Plans </a>
+            <a href="#" class="nav-link signinreg--btn"> Sign In/Register </a>
+          </nav>
+        </header>
+        <!-- <img src = "open-banking-1200-1662083126-1.jpg"> -->
+        <!-- ////////////////////////// -->
+        <!-- Sign Up Form -->
+        <section class="signup-form">
+            <div class="wrapper">
+              <div class="title-text">
+                <div class="title signup">Signup Form</div>
+              </div>
+              <div class="form-container">
+                <div class="form-inner">
+                    <form action="signupdate" class="signup" method="POST">
+                    <div class="field">
+                        <input type="text" placeholder="Full Name" name="aa">
+                    </div>
+                    <div class="field">
+                      <input type="text" placeholder="Email Address" name="bb">
+                    </div>
+                    <div class="field">
+                      <input type="password" placeholder="Password" name="cc">
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Phone Number" name="dd">
+                    </div>
+                    <div class="field btn">
+                    <div class="btn-layer"></div>
+                      <input type="submit" value="Signup" />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="footer">
+            <!-- <div class="footer-container">
+              <ul class="links div1">
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Investors</li>
+                <li>Careers</li>
+              </ul>
+              <ul class="links div2">
+                <li>Help and Support</li>
+                <li>Terms</li>
+                <li>Privacy Policy</li>
+              </ul>
+            </div>
+            <img src="logo.png" class="footer-logo div3" />
+            <div class="adm-login div4">Admin Login</div> -->
+            <nav class="nav--footer">
+              <br />
+              <center>
+                <a href="#" class="nav-link"> About Us </a>
+                <a href="#" class="nav-link"> Contact Us </a>
+                <a href="#" class="nav-link"> Investors </a>
+                <a href="#" class="nav-link signinreg--btn"> Careers </a>
+                <a href="#" class="nav-link"> Help and Support </a>
+                <a href="#" class="nav-link"> Terms </a>
+                <a href="#" class="nav-link">Privacy Policy </a>
+              </center>
+              <br />
+              <center id="small"
+                style="
+                  color: rgba(229, 178, 106, 255);
+                  font-weight: 600;
+                  font-size: 30px;
+                "
+              >
+                BankIt Corp. Ltd. ©
+              </center>
+            </nav>
+          </section>
+        
+
+        <!-- ////////////////////////// -->
+        <!-- Script For Sign In / Register Link in Header -->
+    <script type="text/javascript">
+      const btnSignRegister = document.querySelector(".signinreg--btn");
+      btnSignRegister.addEventListener("click", function (e) {
+        e.preventDefault();
+        window.location.href = "login.html";
+      });
+    </script>
+</html>

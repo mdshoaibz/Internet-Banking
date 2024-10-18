@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <title>Online Banking</title>
+  <body>
+    <header class="header-section">
+      <img src="logo.png" class="header-logo" />
+      <nav class="nav-section">
+        <a href="#" class="nav-link"> About </a>
+        <a href="#" class="nav-link"> How to work it out </a>
+        <a href="#" class="nav-link"> Interest Plans </a>
+        <a href="#" class="nav-link signinreg--btn"> Sign In/Register </a>
+          <a href="AdminLogin.html" class="nav-link"> Admin Login </a>
+      </nav>
+    </header>
+    <!--Log in Form-->
+    <section class="signin-form">
+      <div class="wrapper">
+        <div class="title-text">
+          <div class="title login">Login Form</div>
+        </div>
+        <div class="form-container">
+          <div class="form-inner">
+            <form action="login" class="login">
+              <div class="field">
+                <input type="text" placeholder="Email Address" required name="email"/>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required name="pwd" />
+              </div>
+              <div class="pass-link"><a href="#">Forgot password?</a></div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Login" />
+              </div>
+              <div class="signup-link">
+                Not a member? <a href="signup.html">Signup now</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br /><br />
+
+    <!-- FOOTER -->
+    <section class="footer">
+      <!-- <div class="footer-container">
+        <ul class="links div1">
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Investors</li>
+          <li>Careers</li>
+        </ul>
+        <ul class="links div2">
+          <li>Help and Support</li>
+          <li>Terms</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+      <img src="logo.png" class="footer-logo div3" />
+      <div class="adm-login div4">Admin Login</div> -->
+      <nav class="nav--footer">
+        <br />
+        <center>
+          <a href="#" class="nav-link"> About Us </a>
+          <a href="#" class="nav-link"> Contact Us </a>
+          <a href="#" class="nav-link"> Investors </a>
+          <a href="#" class="nav-link signinreg--btn"> Careers </a>
+          <a href="#" class="nav-link"> Help and Support </a>
+          <a href="#" class="nav-link"> Terms </a>
+          <a href="#" class="nav-link">Privacy Policy </a>
+        </center>
+        <br />
+        <center
+          style="
+            color: rgba(229, 178, 106, 255);
+            font-weight: 600;
+            font-size: 30px;
+          "
+        >
+          BankIt Corp. Ltd. ©
+        </center>
+      </nav>
+    </section>
+    <!-- Script For Sign In / Register Link in Header -->
+    <script type="text/javascript">
+      const btnSignRegister = document.querySelector(".signinreg--btn");
+      btnSignRegister.addEventListener("click", function (e) {
+        e.preventDefault();
+        window.location.href = "signup.html";
+      });
+    </script>
+  </body>
+</html>

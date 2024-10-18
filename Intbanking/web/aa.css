@@ -1,0 +1,25 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 Nov, 2023, 10:37:33 AM
+    Author     : imran
+*/
+
+#getbal{
+    height:40px;
+    position: relative;
+    left:30px;
+    top: 50px;
+    font-size:12px;
+    font-weight: bold;
+}
+#ballabel{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+    padding-top: 20px;
+}
+
